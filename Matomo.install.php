@@ -25,6 +25,21 @@ class PluginMatomo_install extends ContainerFactoryModulInstall_abstract
 
             /*$after*/
         });
+
+        $this->installFunction(function () {
+            /** @var array $data */ /*$before*/
+
+            /** @var Event_crud $crud */
+            $crud = Container::get('Event_crud');
+            $crud->setCrudPath('/ContainerIndexPage/Template/Positions');
+            $crud->setCrudTriggerClass('PluginMatomo_event');
+            $crud->setCrudTriggerMethod('insertPositionHeaderJavascript');
+
+            $progressData['message'] = $crud->insert();;
+
+
+            /*$after*/
+        });
     }
 
     public function uninstall(): void
