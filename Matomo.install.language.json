@@ -1,0 +1,11 @@
+{
+  "type": "install.language",
+  "content": {
+    "/cookieBanner/text": {
+      "language": {
+        "de_DE": "<li>Matomo für die Analyse und Statistik.</li>",
+        "en_US": "<li>Matomo for the Analyse and Statistik.</li>"
+      }
+    }
+  }
+}
