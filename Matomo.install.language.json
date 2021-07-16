@@ -3,7 +3,7 @@
   "content": {
     "/cookieBanner/text": {
       "language": {
-        "de_DE": "<li>Matomo für die Analyse und Statistik.</li>",
+        "de_DE": "<li><a href='{insert/positions position=\"/_/base/url\"}/privacy#privacyMatomo'>Matomo für die Analyse und Statistik.</a></li>",
         "en_US": "<li>Matomo for the Analyse and Statistik.</li>"
       }
     }

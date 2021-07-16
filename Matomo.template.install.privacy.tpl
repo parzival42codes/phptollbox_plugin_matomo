@@ -1,4 +1,5 @@
 <div
+        id="privacyMatomo"
         class="card-container card-container--shadow">
     <div class="card-container-header">Datenschutzerklärung für die Nutzung von Matomo</div>
     <div class="card-container-content">
@@ -26,12 +27,6 @@
             Interesse, so können Sie die Speicherung oder Installation der Cookies durch eine entsprechende Einstellung
             Ihrer Browser-Software verhindern. Gleichzeitig möchten wir Sie in Kenntnis darüber setzen, dass Sie in
             diesem Fall sämtliche Funktionen unserer Website nicht vollumfänglich nutzen können.
-        </p>
-        <p>
-            Es liegt Ihnen frei darüber zu entscheiden, ob in Ihrem Internet-Browser Cookies, die im Rahmen des
-            Einsatzes von Matomo, der dem Websiten-Besitzer die Analyse verschiedener Statistiken ermöglicht, abgelegt
-            werden oder nicht. Falls Sie die Zustimmung zur Erhebung von Informationen durch den Cookie nicht erteilen
-            wollen, können Sie folgenden Link anklicken. Dadurch wird Ihr Besuch nicht mehr erfasst.
         </p>
     </div>
 </div>
