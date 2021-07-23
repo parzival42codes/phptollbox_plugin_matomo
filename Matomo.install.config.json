@@ -1,0 +1,12 @@
+{
+  "type": "install.config",
+  "content": {
+    "/url": {
+      "value": "",
+      "language": {
+        "de_DE": "Matomo Url",
+        "en_US": "Matomo Url"
+      }
+    }
+  }
+}

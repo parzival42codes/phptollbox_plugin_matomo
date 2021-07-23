@@ -8,6 +8,7 @@ class PluginMatomo_install extends ContainerFactoryModulInstall_abstract
     public function install(): void
     {
         $this->importLanguage();
+        $this->importConfig();
 
         $this->installFunction(function () {
             /** @var array $data */ /*$before*/
