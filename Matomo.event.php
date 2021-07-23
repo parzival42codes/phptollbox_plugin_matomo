@@ -12,7 +12,7 @@ class PluginMatomo_event extends Base
             $template      = new ContainerExtensionTemplate();
             $template->set($templateCache->getCacheContent()['header']);
             $template->assign('url',
-                              (string)Config::get('/environment/registry/custom/plugin/matomo/url'));
+                              (string)Config::get('/environment/config/custom/plugin/matomo/url'));
             $template->parse();
             ContainerExtensionTemplateParseInsertPositions::insert('/Page/header/javascript',
                                                                    $template->get());
