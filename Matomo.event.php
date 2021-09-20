@@ -14,13 +14,19 @@ class PluginMatomo_event extends Base
             $template->assign('url',
                               (string)Config::get('/PluginMatomo/url'));
             $template->parse();
-            ContainerExtensionTemplateParseInsertPositions::insert('/Page/header/javascript',
+            ContainerExtensionTemplateParseInsertPositions::insert('/ContainerIndexPage/Template/Positions/Head/Javascript',
                                                                    $template->get());
         }
 
         ContainerExtensionTemplateParseInsertPositions::insert('/Page/CookieBanner/list',
                                                                ContainerFactoryLanguage::get('/PluginMatomo/cookieBanner/text'));
 
+    }
 
+    public static function setHeader($triggering, $object, &$scope): void
+    {
+        $scope['headerCMS']['connect-src'][] = (string)Config::get('/PluginMatomo/url');
+        $scope['headerCMS']['script-src'][] = (string)Config::get('/PluginMatomo/url');
+        $scope['headerCMS']['img-src'][] = (string)Config::get('/PluginMatomo/url');
     }
 }
