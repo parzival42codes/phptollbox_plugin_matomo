@@ -7,6 +7,10 @@ declare(strict_types=1);
  * @modul author Stefan Schlombs
  * @modul versionRequiredSystem 1.0.0
  *
+ * @modul    language_path_de_DE Plugin
+ * @modul    language_name_de_DE Matomo
+ * @modul    language_path_en_US Plugin
+ * @modul    language_name_en_US Matomo
  */
 class PluginMatomo_custom extends Custom_abstract
 {
