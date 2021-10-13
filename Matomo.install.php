@@ -21,7 +21,7 @@ class PluginMatomo_install extends ContainerFactoryModulInstall_abstract
             $crud = new ContainerExtensionTemplateParseInsertPositions_crud();
             $crud->setCrudPosition('/Content/Privacy/Additional');
             $crud->setCrudClass('PluginMatomo');
-            $crud->setCrudContent($templateCache->getCacheContent()['install.privacy']);
+            $crud->setCrudContent($templateCache->get()['install.privacy']);
 
             $progressData['message'] = $crud->insertUpdate();
 

@@ -10,7 +10,7 @@ class PluginMatomo_event extends Base
             $templateCache = new ContainerExtensionTemplateLoad_cache_template(Core::getRootClass(__CLASS__),
                                                                                'header');
             $template      = new ContainerExtensionTemplate();
-            $template->set($templateCache->getCacheContent()['header']);
+            $template->set($templateCache->get()['header']);
             $template->assign('url',
                               (string)Config::get('/PluginMatomo/url'));
             $template->parse();
