@@ -9,6 +9,10 @@ class PluginMatomo_event extends Base
         if ($container->getDIC('/Cookie/CookieBanner/value')) {
             $templateCache = new ContainerExtensionTemplateLoad_cache_template(Core::getRootClass(__CLASS__),
                                                                                'header');
+
+//            d((string)Config::get('/PluginMatomo/url'));
+//            eol();
+
             $template      = new ContainerExtensionTemplate();
             $template->set($templateCache->get()['header']);
             $template->assign('url',
